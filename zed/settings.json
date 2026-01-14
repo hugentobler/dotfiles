@@ -1,0 +1,70 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "buffer_font_family": "Berkeley Mono Variable",
+  "buffer_font_size": 11,
+  "buffer_font_weight": 350,
+  "buffer_line_height": "comfortable",
+  "code_actions_on_format": {
+    "source.action.useSortedKeys.biome": true,
+    "source.action.useSortedProperties.biome": true,
+    "source.fixAll.biome": true,
+    "source.organizeImports.biome": true,
+    "source.removeUnusedImports.ts": true
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "max_severity": null
+    }
+  },
+  "drag_and_drop_selection": { "delay": 100 },
+  "debugger": {},
+  "edit_predictions": { "mode": "eager" },
+  "features": { "edit_prediction_provider": "copilot" },
+  "git_panel": { "fallback_branch_name": "master" },
+  "hover_popover_delay": 100,
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": false
+  },
+  "languages": {
+    "CSS": { "language_servers": [ "biome" ], "formatter": "language_server" },
+    "JavaScript": { "language_servers": [ "biome" ], "formatter": "language_server" },
+    "JSON": { "language_servers": [ "biome" ], "formatter": "language_server" },
+    "JSONC": { "language_servers": [ "biome" ], "formatter": "language_server" },
+    "Svelte": { "language_servers": [ "biome", "svelte-language-server", "tailwind-css-server", "!eslint" ], "formatter": "language_server", "format_on_save": "off" }, // Disable format on save until Biome support is stable
+    "TSX": { "language_servers": [ "biome" ], "prettier": { "allowed": false } },
+    "TypeScript": { "language_servers": [ "biome" ], "prettier": { "allowed": false } },
+    "Python": { "language_servers": ["!ty", "basedpyright", "ruff"] }
+  },
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true // Enable Biome only when config file present
+      }
+    }
+  },
+  "minimap": { "thumb": "always", "show": "auto" },
+  "project_panel": { "entry_spacing": "standard" },
+  "soft_wrap": "editor_width",
+  "terminal": {
+    "dock": "right",
+    "detect_venv": "off",
+    "toolbar": { "breadcrumbs": true }
+  },
+  "theme": {
+    "light": "Quiet Light",
+    "dark": "Xcode Presentation Darker"
+  },
+  "ui_font_family": ".SystemUIFont",
+  "ui_font_size": 12,
+  "ui_font_weight": 400,
+  "vim_mode": true
+}
