@@ -42,7 +42,7 @@
     "Svelte": { "language_servers": [ "biome", "svelte-language-server", "tailwind-css-server", "!eslint" ], "formatter": "language_server", "format_on_save": "off" }, // Disable format on save until Biome support is stable
     "TSX": { "language_servers": [ "biome" ], "prettier": { "allowed": false } },
     "TypeScript": { "language_servers": [ "biome" ], "prettier": { "allowed": false } },
-    "Python": { "language_servers": ["!ty", "basedpyright", "ruff"] }
+    "Python": { "language_servers": ["!ty", "basedpyright", "ruff"], "tab_size": 4, "hard_tabs": false }
   },
   "lsp": {
     "biome": {
