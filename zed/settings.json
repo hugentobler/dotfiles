@@ -7,6 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5.2-codex"
+    },
+    "model_parameters": []
+  },
   "buffer_font_family": "Berkeley Mono Variable",
   "buffer_font_size": 11,
   "buffer_font_weight": 350,
@@ -40,9 +48,8 @@
     "JSON": { "language_servers": [ "biome" ], "formatter": "language_server" },
     "JSONC": { "language_servers": [ "biome" ], "formatter": "language_server" },
     "Svelte": { "language_servers": [ "biome", "svelte-language-server", "tailwind-css-server", "!eslint" ], "formatter": "language_server", "format_on_save": "off" }, // Disable format on save until Biome support is stable
-    "TSX": { "language_servers": [ "biome" ], "prettier": { "allowed": false } },
-    "TypeScript": { "language_servers": [ "biome" ], "prettier": { "allowed": false } },
-    "Python": { "language_servers": ["!ty", "basedpyright", "ruff"], "tab_size": 4, "hard_tabs": false }
+    "TSX": { "language_servers": [ "vtsls", "!eslint", "biome" ], "prettier": { "allowed": false } },
+    "Python": { "language_servers": ["!ty", "basedpyright", "ruff"] }
   },
   "lsp": {
     "biome": {
