@@ -36,7 +36,8 @@
   "debugger": {},
   "edit_predictions": { "mode": "eager" },
   "features": { "edit_prediction_provider": "copilot" },
-  "git_panel": { "fallback_branch_name": "master" },
+  "git_panel": { "tree_view": false,
+                 "fallback_branch_name": "master" },
   "hover_popover_delay": 100,
   "inlay_hints": {
     "enabled": true,

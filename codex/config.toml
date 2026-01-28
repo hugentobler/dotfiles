@@ -1,0 +1,33 @@
+# --------------  ~/.codex/config.toml  --------------
+
+# Default settings
+model = "gpt-5.2-codex"
+model_provider = "azure"
+model_reasoning_effort = "medium"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+suppress_unstable_features_warning = true
+
+[shell_environment_policy]
+inherit = "core"
+exclude = ["*TOKEN*", "*PASSWORD*", "*SECRET*", "*KEY*"]
+
+[features]
+apply_patch_freeform = true
+steer = true
+shell_snapshot = true
+unified_exec = true
+web_search_request = true
+
+[feedback]
+enabled = false
+
+[model_providers.azure]
+name = "Azure"
+base_url = "https://sandbeach0.openai.azure.com/openai"
+env_key = "CODEX_AZURE_OPENAI_API_KEY"
+query_params = { "api-version" = "2025-03-01-preview" }
+wire_api = "responses"
+request_max_retries = 3
+stream_max_retries = 3
+stream_idle_timeout_ms = 60000

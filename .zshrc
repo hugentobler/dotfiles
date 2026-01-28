@@ -2,6 +2,9 @@
 # Ensure ~/.local/bin tools are on PATH (claude, uv, local scripts).
 . "$HOME/.local/bin/env"
 
+# Load user secrets (API keys, etc).
+[ -f "$HOME/.config/secrets.env" ] && source "$HOME/.config/secrets.env"
+
 # Smarter completion initialization (refresh cache once per day).
 autoload -Uz compinit
 if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
