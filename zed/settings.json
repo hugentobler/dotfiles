@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "session": {
+    "trust_all_worktrees": true
+  },
   "agent": {
     "default_profile": "ask",
     "default_model": {
@@ -34,8 +37,8 @@
   },
   "drag_and_drop_selection": { "delay": 100 },
   "debugger": {},
-  "edit_predictions": { "mode": "eager" },
-  "features": { "edit_prediction_provider": "copilot" },
+  "edit_predictions": { "provider": "copilot",
+                        "mode": "eager" },
   "git_panel": { "tree_view": false,
                  "fallback_branch_name": "master" },
   "hover_popover_delay": 100,
@@ -60,9 +63,11 @@
     }
   },
   "minimap": { "thumb": "always", "show": "auto" },
-  "project_panel": { "entry_spacing": "standard" },
+  "project_panel": { "button": true,
+                     "entry_spacing": "standard" },
   "soft_wrap": "editor_width",
   "terminal": {
+    "button": true,
     "dock": "right",
     "detect_venv": "off",
     "toolbar": { "breadcrumbs": true }

@@ -1,0 +1,9 @@
+{
+  "defaultProvider": "azure-openai",
+  "defaultModel": "gpt-5.2-codex",
+  "defaultThinkingLevel": "high",
+  "hideThinkingBlock": true,
+  "collapseChangelog": true,
+  "lastChangelogVersion": "0.52.9",
+  "theme": "light"
+}

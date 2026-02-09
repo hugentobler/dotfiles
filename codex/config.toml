@@ -4,6 +4,7 @@
 model = "gpt-5.2-codex"
 model_provider = "azure"
 model_reasoning_effort = "medium"
+model_personality = "pragmatic"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 web_search = "live"
@@ -28,6 +29,6 @@ base_url = "https://sandbeach0.openai.azure.com/openai"
 env_key = "CODEX_AZURE_OPENAI_API_KEY"
 query_params = { "api-version" = "2025-03-01-preview" }
 wire_api = "responses"
-request_max_retries = 3
-stream_max_retries = 3
-stream_idle_timeout_ms = 60000
+request_max_retries = 5
+stream_max_retries = 10
+stream_idle_timeout_ms = 300000
