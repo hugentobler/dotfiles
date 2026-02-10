@@ -38,7 +38,7 @@
   "drag_and_drop_selection": { "delay": 100 },
   "debugger": {},
   "edit_predictions": { "provider": "copilot",
-                        "mode": "eager" },
+                        "mode": "subtle" },
   "git_panel": { "tree_view": false,
                  "fallback_branch_name": "master" },
   "hover_popover_delay": 100,
