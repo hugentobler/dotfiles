@@ -1,6 +1,5 @@
 # --------------  ~/.codex/config.toml  --------------
 
-# Default settings
 model = "gpt-5.2-codex"
 model_provider = "azure"
 model_reasoning_effort = "medium"
@@ -32,3 +31,9 @@ wire_api = "responses"
 request_max_retries = 5
 stream_max_retries = 10
 stream_idle_timeout_ms = 300000
+
+[projects."/Users/christopher/Developer/website"]
+trust_level = "trusted"
+
+[notice.model_migrations]
+"gpt-5.2-codex" = "gpt-5.3-codex"

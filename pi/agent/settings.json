@@ -1,9 +1,9 @@
 {
-  "defaultProvider": "anthropic",
-  "defaultModel": "claude-opus-4-5",
+  "defaultProvider": "azure-openai",
+  "defaultModel": "gpt-5.2-codex",
   "defaultThinkingLevel": "high",
   "hideThinkingBlock": true,
   "collapseChangelog": true,
-  "lastChangelogVersion": "0.52.9",
+  "lastChangelogVersion": "0.52.10",
   "theme": "light"
 }
