@@ -41,7 +41,7 @@
       "api": "anthropic-messages",
       "models": [
         {
-          "id": "claude-sonnet-4-5",
+          "id": "claude-sonnet-4-6",
           "name": "sonnet",
           "reasoning": true,
           "input": ["text", "image"],
@@ -55,7 +55,7 @@
           "maxTokens": 64000
         },
         {
-          "id": "claude-opus-4-5",
+          "id": "claude-opus-4-6",
           "name": "opus",
           "reasoning": true,
           "input": ["text", "image"],

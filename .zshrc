@@ -1,7 +1,4 @@
 
-# Ensure ~/.local/bin tools are on PATH (claude, uv, local scripts).
-. "$HOME/.local/bin/env"
-
 # Load user secrets (API keys, etc).
 [ -f "$HOME/.config/secrets.env" ] && source "$HOME/.config/secrets.env"
 
@@ -29,7 +26,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # bun completions
-[ -s "/Users/christopher/.bun/_bun" ] && source "/Users/christopher/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # nvm: keep Node available for tools while preserving lazy-load.
 export NVM_DIR="$HOME/.nvm"

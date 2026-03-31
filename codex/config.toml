@@ -1,8 +1,8 @@
 # --------------  ~/.codex/config.toml  --------------
 
-model = "gpt-5.2-codex"
+model = "gpt-5.3-codex"
 model_provider = "azure"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "high"
 model_personality = "pragmatic"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
@@ -34,6 +34,3 @@ stream_idle_timeout_ms = 300000
 
 [projects."/Users/christopher/Developer/website"]
 trust_level = "trusted"
-
-[notice.model_migrations]
-"gpt-5.2-codex" = "gpt-5.3-codex"
