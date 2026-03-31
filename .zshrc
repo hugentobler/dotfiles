@@ -2,6 +2,9 @@
 # Load user secrets (API keys, etc).
 [ -f "$HOME/.config/secrets.env" ] && source "$HOME/.config/secrets.env"
 
+# Cloudflare WARP TLS certificate (opt-in per machine).
+[ -f "$HOME/.config/cloudflare-cert.env" ] && source "$HOME/.config/cloudflare-cert.env"
+
 # Smarter completion initialization (refresh cache once per day).
 autoload -Uz compinit
 if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
